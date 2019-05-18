@@ -299,4 +299,60 @@ public class RegistroLoginController implements Serializable {
 
     }
 
+    public RegistroLogin getCurrent() {
+        return current;
+    }
+
+    public void setCurrent(RegistroLogin current) {
+        this.current = current;
+    }
+
+    public RegistroLoginFacade getEjbFacade() {
+        return ejbFacade;
+    }
+
+    public void setEjbFacade(RegistroLoginFacade ejbFacade) {
+        this.ejbFacade = ejbFacade;
+    }
+
+    public int getSelectedItemIndex() {
+        return selectedItemIndex;
+    }
+
+    public void setSelectedItemIndex(int selectedItemIndex) {
+        this.selectedItemIndex = selectedItemIndex;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
+    public boolean isLogeado() {
+        return logeado;
+    }
+
+    public void setLogeado(boolean logeado) {
+        this.logeado = logeado;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
 }
