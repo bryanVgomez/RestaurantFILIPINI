@@ -99,7 +99,7 @@ public class Region implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.Region[ idRegion=" + idRegion + " ]";
+        return descripcionRegion;
     }
     
 }

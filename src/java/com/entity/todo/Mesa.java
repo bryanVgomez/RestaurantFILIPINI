@@ -123,7 +123,7 @@ public class Mesa implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.Mesa[ idMesa=" + idMesa + " ]";
+        return descripcion;
     }
     
 }

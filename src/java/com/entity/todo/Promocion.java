@@ -124,7 +124,7 @@ public class Promocion implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.Promocion[ iDPROMOCION=" + iDPROMOCION + " ]";
+        return nombre;
     }
     
 }

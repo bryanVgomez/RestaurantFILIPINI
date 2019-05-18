@@ -112,7 +112,7 @@ public class Comuna implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.Comuna[ idComuna=" + idComuna + " ]";
+        return descripcionComuna;
     }
     
 }

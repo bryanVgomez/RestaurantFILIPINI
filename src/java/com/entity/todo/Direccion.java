@@ -135,7 +135,7 @@ public class Direccion implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.Direccion[ idDireccion=" + idDireccion + " ]";
+        return direccion;
     }
     
 }

@@ -99,7 +99,9 @@ public class TipoProducto implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.TipoProducto[ idTipoProducto=" + idTipoProducto + " ]";
+        return descripcion;
     }
     
 }
+
+
