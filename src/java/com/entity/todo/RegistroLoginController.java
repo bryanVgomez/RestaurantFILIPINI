@@ -51,7 +51,7 @@ public class RegistroLoginController implements Serializable {
         
         logeado = false;
              try {
-                FacesContext.getCurrentInstance().getExternalContext().redirect("denegado.xhtml");
+               FacesContext.getCurrentInstance().getExternalContext().redirect("login.xhtml");
             } catch (IOException ex) {
                 Logger.getLogger(RegistroLoginController.class.getName()).log(Level.SEVERE, null, ex);
             }

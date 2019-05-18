@@ -5,13 +5,83 @@
       xmlns:p="http://primefaces.org/ui" >
     <h:head>
         <title>Login</title>
+        <link rel="icon" type="image/png" href="../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../css/animate.css"/>
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../css/hamburgers.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../css/select2.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../css/util.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+        
+        
+        
     </h:head>
 <h:body style="text-align:center">
+    
+    <div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" >
+					<img src="../images/img-01.png" alt="IMG"/>
+				</div>
+
+				<form class="login100-form validate-form" action="./mantenedor.jsp" method="POST">
+					<span class="login100-form-title">
+						Inicia sesion
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" value="#{registroLoginController.nombre}" id="username"/>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" value="#{registroLoginController.clave}" id="password"/>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					
+					
+					
+                                    
+                                    <p:commandButton class="login100-form-btn" value="Login" 
+             action="#{registroLoginController.login()}" />
+          <h:outputLabel></h:outputLabel>
+
+
+					
+
+					
+				</form>
+			</div>
+		</div>
+	</div>
+    
+    
+    
+    
+    
+    
+    
+    
   <p:growl id="mensajes" showDetail="true" life="2000" />
   <h:form>
-    <p:panel header="Login" style="width:600px">
+    <p:panel class="wrap-input100 validate-input" header="Login" style="width:600px">
       <h:panelGrid columns="2" cellpadding="5">
-        <h:outputLabel for="username" value="Usuario:" />
+        <h:outputLabel  class="input100" for="username" value="Usuario:" />
         <p:inputText value="#{registroLoginController.nombre}" id="username"
            required="true" label="username" />
         <h:outputLabel for="password" value="Clave:" />
@@ -25,6 +95,23 @@
       </h:panelGrid>
     </p:panel>
   </h:form>
+  
+  <script src="../js/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../js/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../js/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="../js/login.js"></script>
+  
+  
 </h:body>
 </html>
-

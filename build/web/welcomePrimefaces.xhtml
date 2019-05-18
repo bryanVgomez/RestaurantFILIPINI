@@ -6,7 +6,7 @@
       xmlns:p="http://primefaces.org/ui">
 
     <f:view contentType="text/html">
-        <h:head>
+         <h:head>
             <f:facet name="first">
                 <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
                 <title>PrimeFaces</title>
@@ -18,28 +18,29 @@
             <p:layout fullPage="true">
 
                 <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
-                    Header
+                    <h1 align="CENTER">BIENVENIDO AL MANTENEDOR CENTRAL</h1>
                 </p:layoutUnit>
 
-                <p:layoutUnit position="south" size="100" closable="true" collapsible="true">
-                    Footer
+                <p:layoutUnit position="south" size="0" closable="false" collapsible="false">
+                    
                 </p:layoutUnit>
+                
+                
 
-                <p:layoutUnit position="west" size="175" header="Left" collapsible="true">
-                    <p:menu>
-                        <p:submenu label="Resources">
-                            <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
-                            <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
-                            <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
+                
 
-                        </p:submenu>
-
-                    </p:menu>
-                </p:layoutUnit>
-
-                <p:layoutUnit position="center">
-                    Welcome to PrimeFaces
+                <p:layoutUnit position="center" >
+                    
+                    <a  href="reserva/List.xhtml"><img  style="width:300px;  position: relative; left: 50px; top: 100px" src="Imagenes/reservas.jpg"> </img></a>
+                    <a href="persona/List.xhtml"><img style="width:300px;  position: relative; left: 50px; top: 100px" src="Imagenes/personas.jpg"> </img></a>
+                    <a href="pedido/List.xhtml"><img style="width:360px;  position: relative; left: 50px; top: 100px" src="Imagenes/menu1.jpg"> </img></a>
+                    <a href="sucursal/List.xhtml"><img style="width:292px;  position: relative; left: 50px; top: 100px" src="Imagenes/sucursales.jpg"> </img></a>
+                   
+                    
+                    
+                    
+                   
+                    
                 </p:layoutUnit>
 
             </p:layout>
@@ -48,4 +49,3 @@
 
     </f:view>
 </html>
-

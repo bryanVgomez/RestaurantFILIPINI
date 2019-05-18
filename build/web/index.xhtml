@@ -43,7 +43,10 @@
         <h:link outcome="/tipoProducto/List" value="Show All TipoProducto Items"/>
         <br />
         <h:link outcome="/registroLogin/List" value="Show All RegistroLogin Items"/>
-       
+       <h:form>
+          <h:commandButton id="loginButton" value="Logout"
+             action="#{registroLoginController.logout()}" />
+        </h:form>
 
     </h:body>
 
