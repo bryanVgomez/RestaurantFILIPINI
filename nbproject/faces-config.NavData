@@ -3,13 +3,13 @@
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
         <Node id="ciudad/Edit.xhtml" x="2400" y="300" zoom="true"/>
-        <Node id="confirmacion.xhtml" x="150" y="150" zoom="true"/>
         <Node id="tipoPersona/List.xhtml" x="1150" y="450" zoom="true"/>
+        <Node id="confirmacion.xhtml" x="150" y="150" zoom="true"/>
         <Node id="cargo/View.xhtml" x="1900" y="150" zoom="true"/>
         <Node id="persona/Edit.xhtml" x="2400" y="150" zoom="true"/>
         <Node id="persona/Create.xhtml" x="400" y="150" zoom="true"/>
-        <Node id="welcomePrimefaces.xhtml" x="1400" y="900" zoom="true"/>
         <Node id="mesa/List.xhtml" x="650" y="1050" zoom="true"/>
+        <Node id="welcomePrimefaces.xhtml" x="1400" y="900" zoom="true"/>
         <Node id="reserva/List.xhtml" x="650" y="450" zoom="true"/>
         <Node id="cargo/List.xhtml" x="900" y="1200" zoom="true"/>
         <Node id="ciudad/View.xhtml" x="2150" y="300" zoom="true"/>
@@ -27,8 +27,8 @@
         <Node id="denegado.xhtml" x="150" y="1050" zoom="true"/>
         <Node id="formulario/List.xhtml" x="900" y="150" zoom="true"/>
         <Node id="index.xhtml" x="400" y="1050" zoom="true"/>
-        <Node id="formulario/View.xhtml" x="1400" y="750" zoom="true"/>
         <Node id="reserva/Create.xhtml" x="2150" y="150" zoom="true"/>
+        <Node id="formulario/View.xhtml" x="1400" y="750" zoom="true"/>
         <Node id="direccion/List.xhtml" x="150" y="1350" zoom="true"/>
         <Node id="tipoProducto/Edit.xhtml" x="900" y="450" zoom="true"/>
         <Node id="promocion/Create.xhtml" x="1150" y="900" zoom="true"/>
@@ -41,8 +41,8 @@
         <Node id="ciudad/Create.xhtml" x="900" y="900" zoom="true"/>
         <Node id="mesa/Edit.xhtml" x="2150" y="450" zoom="true"/>
         <Node id="producto/View.xhtml" x="1150" y="150" zoom="true"/>
-        <Node id="region/View.xhtml" x="150" y="900" zoom="true"/>
         <Node id="sucursal/List.xhtml" x="650" y="1200" zoom="true"/>
+        <Node id="region/View.xhtml" x="150" y="900" zoom="true"/>
         <Node id="pedido/Create.xhtml" x="1900" y="300" zoom="true"/>
         <Node id="direccion/Create.xhtml" x="1650" y="600" zoom="true"/>
         <Node id="region/Edit.xhtml" x="2650" y="150" zoom="true"/>
@@ -61,12 +61,12 @@
         <Node id="direccion/Edit.xhtml" x="1150" y="1050" zoom="true"/>
         <Node id="comuna/Create.xhtml" x="900" y="300" zoom="true"/>
         <Node id="persona/List.xhtml" x="1400" y="600" zoom="true"/>
-        <Node id="region/Create.xhtml" x="650" y="1350" zoom="true"/>
         <Node id="formulario/Edit.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="region/Create.xhtml" x="650" y="1350" zoom="true"/>
         <Node id="comuna/Edit.xhtml" x="400" y="450" zoom="true"/>
         <Node id="persona/View.xhtml" x="1900" y="450" zoom="true"/>
-        <Node id="tipoProducto/List.xhtml" x="900" y="1050" zoom="true"/>
         <Node id="mesa/View.xhtml" x="150" y="1650" zoom="true"/>
+        <Node id="tipoProducto/List.xhtml" x="900" y="1050" zoom="true"/>
         <Node id="producto/Edit.xhtml" x="150" y="450" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations"/>

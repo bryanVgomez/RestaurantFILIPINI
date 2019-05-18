@@ -5,18 +5,61 @@
     <h:head>
         <title>Facelet Title</title>
         <h:outputStylesheet name="css/jsfcrud.css"/>
+        
+        
+        
+        <link rel="icon" type="image/png" href="../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../css/animate.css"/>
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../css/hamburgers.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../css/select2.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../css/util.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/main.css"/>
     </h:head>
     <h:body>
         ${registroLoginController.permitido()}
         
-         Bienvenido!!
+        <div align="CENTER">
+        <div class="login100-pic js-tilt" >
+	<img  src="../images/img-01.png" alt="IMG"/>
+				</div>
+        </div>
+        <h3 align="CENTER">Bienvenidooo ADMIN!!!</h3>
         <br />
-        <h:link outcome="welcomePrimefaces" value="Acceder a mantenedores" />
+        <h:link  class="login100-form-btn" outcome="welcomePrimefaces" value="Acceder a mantenedores" />
        <h:form>
-          <h:commandButton id="loginButton" value="Logout"
+          <h:commandButton class="login100-form-btn" id="loginButton" value="Logout"
              action="#{registroLoginController.logout()}" />
         </h:form>
 
+        
+        
+        
+        
+        
+        
+        <script src="../js/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../js/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../js/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="../js/login.js"></script> 
     </h:body>
 
 
