@@ -126,7 +126,7 @@ public class Reserva implements Serializable {
 
     @Override
     public String toString() {
-        return this.idReserva.toString();
+        return "Reserva: "+idReserva;
     }
     
 }

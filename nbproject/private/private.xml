@@ -3,8 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/web/index.xhtml</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Mesa.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Comuna.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/TipoPersona.java</file>
             <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/web/login.xhtml</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Pedido.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/TipoProducto.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Cargo.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Sucursal.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Promocion.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Ciudad.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Producto.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Persona.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Direccion.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Region.java</file>
+            <file>file:/C:/Users/Connectis/Documents/GitHub/RestaurantFILIPINI/src/java/com/entity/todo/Reserva.java</file>
         </group>
     </open-files>
 </project-private>

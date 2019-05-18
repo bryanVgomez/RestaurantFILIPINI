@@ -25,47 +25,39 @@
     </h:head>
 <h:body style="text-align:center">
     
-    <div class="limiter">
+    <div class="limiter" align="CENTER">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" >
-					<img src="../images/img-01.png" alt="IMG"/>
-				</div>
+				
 
-				<h:form>
-					<span class="login100-form-title">
-						Iniciar sesion para Mantenedores
-					</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "Ingrese un usuario">
-						<input  class="input100" type="text" value="#{registroLoginController.nombre}" id="username" required="true"/>
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Password es requerida">
-						<input class="input100" type="password" value="#{registroLoginController.clave}" id="password"/>
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-					</div>
-					
-					
-					
-					
-                                    
-                                    <p:commandButton class="login100-form-btn" value="Login" id="loginButton"
+				<p:growl id="mensajes" showDetail="true" life="2000" />
+                                
+                                <div class="wrap-input100 validate-input" data-validate = "Ingrese un usuario">
+  <h:form>
+    <p:panel class="wrap-input100 validate-input" header="Login" style="width:600px">
+      <h:panelGrid columns="2" cellpadding="5">
+        <h:outputLabel   for="username" value="Usuario:" />
+        <p:inputText value="#{registroLoginController.nombre}" id="username"
+           required="true" label="username" />
+        <h:outputLabel for="password" value="Clave:" />
+        <p:password value="#{registroLoginController.clave}" id="password" required="true"
+           label="password" />
+       
+          <p:commandButton id="loginButton" value="Login"
              action="#{registroLoginController.login()}" />
           <h:outputLabel></h:outputLabel>
+ 
+      </h:panelGrid>
+    </p:panel>
+  </h:form>
+                                </div>
+    
 
 
 					
 
 					
-				</h:form>
+				
 			</div>
 		</div>
 	</div>
@@ -76,24 +68,9 @@
     
     
     
-    
  
   
-  <script src="../js/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="../js/popper.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="../js/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="../js/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="../js/login.js"></script>
+  
   
   
 </h:body>

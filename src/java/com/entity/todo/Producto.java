@@ -146,7 +146,7 @@ public class Producto implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.Producto[ idProducto=" + idProducto + " ]";
+        return descripcion;
     }
     
 }

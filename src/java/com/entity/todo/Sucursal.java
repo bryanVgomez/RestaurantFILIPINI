@@ -112,7 +112,7 @@ public class Sucursal implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.Sucursal[ idSucursal=" + idSucursal + " ]";
+        return nombre;
     }
     
 }

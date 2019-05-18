@@ -99,7 +99,7 @@ public class TipoPersona implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.TipoPersona[ tipoPersona=" + tipoPersona + " ]";
+        return descripcion;
     }
     
 }

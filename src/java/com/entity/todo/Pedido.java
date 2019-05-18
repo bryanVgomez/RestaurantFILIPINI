@@ -119,7 +119,7 @@ public class Pedido implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.Pedido[ idPedido=" + idPedido + " ]";
+        return "Pedido = " + idPedido ;
     }
     
 }

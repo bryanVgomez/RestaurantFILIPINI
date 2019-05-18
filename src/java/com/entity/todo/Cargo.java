@@ -85,7 +85,7 @@ public class Cargo implements Serializable {
 
     @Override
     public String toString() {
-        return "com.entity.todo.Cargo[ idCargo=" + idCargo + " ]";
+        return nombre;
     }
     
 }
