@@ -8,6 +8,7 @@
     </h:head>
     <h:body>
         Hello from Facelets
+        ${registroLoginController.permitido()}
         <br />
         <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
         <br />
@@ -40,7 +41,12 @@
         <h:link outcome="/tipoPersona/List" value="Show All TipoPersona Items"/>
         <br />
         <h:link outcome="/tipoProducto/List" value="Show All TipoProducto Items"/>
+        <br />
+        <h:link outcome="/registroLogin/List" value="Show All RegistroLogin Items"/>
+       
+
     </h:body>
+
 
 
 
