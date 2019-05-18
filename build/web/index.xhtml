@@ -7,40 +7,18 @@
         <h:outputStylesheet name="css/jsfcrud.css"/>
     </h:head>
     <h:body>
-        Hello from Facelets
+        ${registroLoginController.permitido()}
+        
+         Bienvenido!!
         <br />
-        <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
-        <br />
-        <h:link outcome="/cargo/List" value="Show All Cargo Items"/>
-        <br />
-        <h:link outcome="/ciudad/List" value="Show All Ciudad Items"/>
-        <br />
-        <h:link outcome="/comuna/List" value="Show All Comuna Items"/>
-        <br />
-        <h:link outcome="/direccion/List" value="Show All Direccion Items"/>
-        <br />
-        <h:link outcome="/formulario/List" value="Show All Formulario Items"/>
-        <br />
-        <h:link outcome="/mesa/List" value="Show All Mesa Items"/>
-        <br />
-        <h:link outcome="/pedido/List" value="Show All Pedido Items"/>
-        <br />
-        <h:link outcome="/persona/List" value="Show All Persona Items"/>
-        <br />
-        <h:link outcome="/producto/List" value="Show All Producto Items"/>
-        <br />
-        <h:link outcome="/promocion/List" value="Show All Promocion Items"/>
-        <br />
-        <h:link outcome="/region/List" value="Show All Region Items"/>
-        <br />
-        <h:link outcome="/reserva/List" value="Show All Reserva Items"/>
-        <br />
-        <h:link outcome="/sucursal/List" value="Show All Sucursal Items"/>
-        <br />
-        <h:link outcome="/tipoPersona/List" value="Show All TipoPersona Items"/>
-        <br />
-        <h:link outcome="/tipoProducto/List" value="Show All TipoProducto Items"/>
+        <h:link outcome="welcomePrimefaces" value="Acceder a mantenedores" />
+       <h:form>
+          <h:commandButton id="loginButton" value="Logout"
+             action="#{registroLoginController.logout()}" />
+        </h:form>
+
     </h:body>
+
 
 
 
