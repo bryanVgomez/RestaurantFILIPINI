@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <Resource id="todo" type="javax.sql.DataSource">#Fri May 17 21:44:10 CLT 2019
+jdbcDriver=com.mysql.jdbc.Driver
+password=duoc2018
+userName=admin
+jdbcUrl=jdbc\:mysql\://telefoniadb.cil0ki92qnrc.us-east-2.rds.amazonaws.com\:3320/restaurant?zeroDateTimeBehavior\=convertToNull
+</Resource>
+</resources>

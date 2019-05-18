@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="DireccionEditDlg" widgetVar="DireccionEditDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.EditDireccionTitle}">
+            <h:form id="DireccionEditForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{direccionController.selected != null}">
+                        <p:outputLabel value="#{bundle.EditDireccionLabel_idDireccion}" for="idDireccion" />
+                        <p:inputText id="idDireccion" value="#{direccionController.selected.idDireccion}" title="#{bundle.EditDireccionTitle_idDireccion}" required="true" requiredMessage="#{bundle.EditDireccionRequiredMessage_idDireccion}"/>
+                        <p:outputLabel value="#{bundle.EditDireccionLabel_direccion}" for="direccion" />
+                        <p:inputText id="direccion" value="#{direccionController.selected.direccion}" title="#{bundle.EditDireccionTitle_direccion}" />
+                        <p:outputLabel value="#{bundle.EditDireccionLabel_numero}" for="numero" />
+                        <p:inputText id="numero" value="#{direccionController.selected.numero}" title="#{bundle.EditDireccionTitle_numero}" />
+                        <p:outputLabel value="#{bundle.EditDireccionLabel_comuna}" for="comuna" />
+                        <p:selectOneMenu id="comuna" value="#{direccionController.selected.comuna}" >
+                            <f:selectItem itemLabel="#{bundle.SelectOneMessage}"/>
+                            <f:selectItems value="#{comunaController.itemsAvailableSelectOne}"
+                                           var="comunaItem"
+                                           itemValue="#{comunaItem}"/>
+                        </p:selectOneMenu>
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{direccionController.update}" value="#{bundle.Save}" update="display,:DireccionListForm:datalist,:growl" oncomplete="handleSubmit(args, 'DireccionEditDialog');"/>
+                    <p:commandButton value="#{bundle.Cancel}" onclick="DireccionEditDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

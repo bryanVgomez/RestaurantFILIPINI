@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="PedidoViewDlg" widgetVar="PedidoViewDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.ViewPedidoTitle}">
+            <h:form id="PedidoViewForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{pedidoController.selected != null}">
+                        <h:outputText value="#{bundle.ViewPedidoLabel_idPedido}"/>
+                        <h:outputText value="#{pedidoController.selected.idPedido}" title="#{bundle.ViewPedidoTitle_idPedido}"/>
+                        <h:outputText value="#{bundle.ViewPedidoLabel_cantidad}"/>
+                        <h:outputText value="#{pedidoController.selected.cantidad}" title="#{bundle.ViewPedidoTitle_cantidad}"/>
+                        <h:outputText value="#{bundle.ViewPedidoLabel_reserva}"/>
+                        <h:outputText value="#{pedidoController.selected.reserva}" title="#{bundle.ViewPedidoTitle_reserva}"/>
+                        <h:outputText value="#{bundle.ViewPedidoLabel_promocion}"/>
+                        <h:outputText value="#{pedidoController.selected.promocion}" title="#{bundle.ViewPedidoTitle_promocion}"/>
+                        <h:outputText value="#{bundle.ViewPedidoLabel_producto}"/>
+                        <h:outputText value="#{pedidoController.selected.producto}" title="#{bundle.ViewPedidoTitle_producto}"/>
+                    </p:panelGrid>
+                    <p:commandButton value="#{bundle.Close}" onclick="PedidoViewDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

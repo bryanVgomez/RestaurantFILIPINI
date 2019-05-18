@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="FormularioViewDlg" widgetVar="FormularioViewDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.ViewFormularioTitle}">
+            <h:form id="FormularioViewForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{formularioController.selected != null}">
+                        <h:outputText value="#{bundle.ViewFormularioLabel_idForm}"/>
+                        <h:outputText value="#{formularioController.selected.idForm}" title="#{bundle.ViewFormularioTitle_idForm}"/>
+                        <h:outputText value="#{bundle.ViewFormularioLabel_nombre}"/>
+                        <h:outputText value="#{formularioController.selected.nombre}" title="#{bundle.ViewFormularioTitle_nombre}"/>
+                        <h:outputText value="#{bundle.ViewFormularioLabel_email}"/>
+                        <h:outputText value="#{formularioController.selected.email}" title="#{bundle.ViewFormularioTitle_email}"/>
+                        <h:outputText value="#{bundle.ViewFormularioLabel_telefono}"/>
+                        <h:outputText value="#{formularioController.selected.telefono}" title="#{bundle.ViewFormularioTitle_telefono}"/>
+                        <h:outputText value="#{bundle.ViewFormularioLabel_tipoFormulario}"/>
+                        <h:outputText value="#{formularioController.selected.tipoFormulario}" title="#{bundle.ViewFormularioTitle_tipoFormulario}"/>
+                        <h:outputText value="#{bundle.ViewFormularioLabel_asunto}"/>
+                        <h:outputText value="#{formularioController.selected.asunto}" title="#{bundle.ViewFormularioTitle_asunto}"/>
+                        <h:outputText value="#{bundle.ViewFormularioLabel_mensaje}"/>
+                        <h:outputText value="#{formularioController.selected.mensaje}" title="#{bundle.ViewFormularioTitle_mensaje}"/>
+                    </p:panelGrid>
+                    <p:commandButton value="#{bundle.Close}" onclick="FormularioViewDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

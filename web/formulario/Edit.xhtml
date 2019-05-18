@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="FormularioEditDlg" widgetVar="FormularioEditDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.EditFormularioTitle}">
+            <h:form id="FormularioEditForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{formularioController.selected != null}">
+                        <p:outputLabel value="#{bundle.EditFormularioLabel_idForm}" for="idForm" />
+                        <p:inputText id="idForm" value="#{formularioController.selected.idForm}" title="#{bundle.EditFormularioTitle_idForm}" required="true" requiredMessage="#{bundle.EditFormularioRequiredMessage_idForm}"/>
+                        <p:outputLabel value="#{bundle.EditFormularioLabel_nombre}" for="nombre" />
+                        <p:inputText id="nombre" value="#{formularioController.selected.nombre}" title="#{bundle.EditFormularioTitle_nombre}" />
+                        <p:outputLabel value="#{bundle.EditFormularioLabel_email}" for="email" />
+                        <p:inputText id="email" value="#{formularioController.selected.email}" title="#{bundle.EditFormularioTitle_email}" />
+                        <p:outputLabel value="#{bundle.EditFormularioLabel_telefono}" for="telefono" />
+                        <p:inputText id="telefono" value="#{formularioController.selected.telefono}" title="#{bundle.EditFormularioTitle_telefono}" />
+                        <p:outputLabel value="#{bundle.EditFormularioLabel_tipoFormulario}" for="tipoFormulario" />
+                        <p:inputText id="tipoFormulario" value="#{formularioController.selected.tipoFormulario}" title="#{bundle.EditFormularioTitle_tipoFormulario}" />
+                        <p:outputLabel value="#{bundle.EditFormularioLabel_asunto}" for="asunto" />
+                        <p:inputText id="asunto" value="#{formularioController.selected.asunto}" title="#{bundle.EditFormularioTitle_asunto}" />
+                        <p:outputLabel value="#{bundle.EditFormularioLabel_mensaje}" for="mensaje" />
+                        <p:inputText id="mensaje" value="#{formularioController.selected.mensaje}" title="#{bundle.EditFormularioTitle_mensaje}" />
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{formularioController.update}" value="#{bundle.Save}" update="display,:FormularioListForm:datalist,:growl" oncomplete="handleSubmit(args, 'FormularioEditDialog');"/>
+                    <p:commandButton value="#{bundle.Cancel}" onclick="FormularioEditDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>
